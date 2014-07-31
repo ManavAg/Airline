@@ -1,0 +1,246 @@
+ -------Airline Network Optimization for cargo Airlines--------BETA version
+ >>>>****for testing and evalution only **** not for commercial use****<<<<
+
+ ===========================================================================
+ This program is designed and developed at 
+ Aerospace Engineering Department, IIT Bombay 
+
+ For any query/suggestion, contact - 
+ Prof. Rajkumar S. Pant , LTA systems lab, rkpant@aero.iitb.ac.in
+ Ajeet Singh, MTech Student(2005-2007), ajeet@aero.iitb.ac.in
+ Florian Maul, Technical University of Munich, florian.maul@mytum.de
+ Manav Agarwal, Undergraduate 2007-2012, IIT Bombay, manav.agarwal@iitb.ac.in
+ ===========================================================================
+
+ The Schedule is generated on :
+ Thu Jun 25 16:42:10 2009
+ 
+ ===========================================================================
+
+
+ ------------------------------------------
+ System Detail
+ ------------------------------------------
+ Aircraft	Demand	Cost	Time
+   1		37.00	5.47	545.00
+   2		33.00	10.94	510.00
+   3		33.00	8.02	410.00
+   4		8.00	6.55	315.00
+   5		19.00	8.90	425.00
+   6		26.00	9.19	495.00
+   7		20.00	7.00	300.00
+ ------------------------------------------
+ Sum		176.00	56.07	3000.00
+
+ Priority of Demand Index  	= 0.4088
+ Priority of Cost Index  	= 0.5912
+ Priority of Time index  	= 0.0000
+ Priority of Route Prio. index 	= 0.0000
+
+ Tons/Lakhs Rs 	= 3.1389
+ Tons/Hour 	= 3.5200
+ Variance QOS 	= 0.1933
+
+ Fleet Utilization [%] 	= 51.071
+ No. of OD pair served 	= 22
+
+
+ --------------------------------------------------------------------------
+ Network Schedule
+ --------------------------------------------------------------------------
+ Flight Ac     Type  Source Takeoff Destination Landing Payload	Empty	Cost
+ 1 	1 	737  MAA     0.00	BOM	105.00	8.00	7.00	1.40 
+ 2 	2 	757  HYD     0.00	BOM	75.00	4.00	19.00	2.19 
+ 3 	3 	747  DEL     0.00	AHD	80.00	23.00	0.00	2.33 
+ 4 	4 	707  MAA     0.00	BLR	45.00	2.00	21.00	1.31 
+ 5 	5 	717  MAA     0.00	HYD	60.00	12.00	11.00	1.75 
+ 6 	6 	727  BLR     0.00	BOM	95.00	8.00	15.00	2.77 
+ 7 	7 	767  CCU     0.00	DEL	120.00	10.00	13.00	3.50 
+ 8 	4 	707  BLR     90.00	MAA	135.00	4.00	19.00	1.31 
+ 9 	2 	757  BOM     120.00	AHD	180.00	11.00	12.00	1.75 
+ 10 	5 	717  HYD     120.00	DEL	245.00	14.00	9.00	3.65 
+ 11 	3 	747  AHD     125.00	BOM	185.00	21.00	2.00	1.75 
+ 12 	1 	737  BOM     150.00	DEL	270.00	15.00	0.00	1.60 
+ 13 	6 	727  BOM     155.00	BLR	250.00	16.00	7.00	2.77 
+ 14 	7 	767  DEL     180.00	CCU	300.00	10.00	13.00	3.50 
+ 15 	4 	707  MAA     180.00	CCU	315.00	4.00	19.00	3.93 
+ 16 	2 	757  AHD     225.00	DEL	305.00	13.00	10.00	2.33 
+ 17 	3 	747  BOM     230.00	HYD	305.00	8.00	15.00	2.19 
+ 18 	5 	717  DEL     305.00	BOM	425.00	3.00	20.00	3.50 
+ 19 	6 	727  BLR     310.00	HYD	375.00	8.00	15.00	1.90 
+ 20 	1 	737  DEL     315.00	HYD	440.00	14.00	1.00	1.67 
+ 21 	2 	757  DEL     350.00	BLR	510.00	14.00	9.00	4.67 
+ 22 	3 	747  HYD     350.00	MAA	410.00	2.00	21.00	1.75 
+ 23 	7 	767  CCU     360.00	CCU	360.00	0.00	0.00	0.00 
+ 24 	4 	707  CCU     360.00	CCU	360.00	0.00	0.00	0.00 
+ 25 	6 	727  HYD     435.00	MAA	495.00	6.00	17.00	1.75 
+ 26 	3 	747  MAA     455.00	MAA	455.00	0.00	0.00	0.00 
+ 27 	5 	717  BOM     485.00	BOM	485.00	0.00	0.00	0.00 
+ 28 	1 	737  HYD     485.00	MAA	545.00	10.00	5.00	0.80 
+ 29 	2 	757  BLR     555.00	BLR	555.00	0.00	0.00	0.00 
+
+ Extra Carried demand detail -
+ [ Flight Ac	Extra_Cargo for Destination ]
+ [   3	  3	19.00		BLR	 ]
+ [   5	  5	10.00		BLR	 ]
+ [   8	  4	2.00		BLR	 ]
+ [   9	  2	7.00		BLR	 ]
+ [   13	  6	6.00		BLR	 ]
+ [   16	  2	2.00		BLR	 ]
+ [   17	  3	2.00		BLR	 ]
+ [   20	  1	10.00		BLR	 ]
+
+
+ --------------------------------------------------------------------------
+ Aircraft Schedule
+ --------------------------------------------------------------------------
+
+
+ For Aircraft 1)
+
+ Flight Type   Source Takeoff  Destination Landing Payload	Empty	Cost
+ 1	737	MAA	0.00   	BOM	   105.00    8.00   	7.00   	1.40    
+ 12	737	BOM	150.00 	DEL	   270.00    15.00  	0.00   	1.60    
+ 20	737	DEL	315.00 	HYD	   440.00    14.00  	1.00   	1.67    
+ 28	737	HYD	485.00 	MAA	   545.00    10.00  	5.00   	0.80    
+ Utilization [%] = 68.333
+
+ Extra Carried demand detail -
+ [ Flight	Extra_Cargo for 	Destination ]
+ [   20		   10.00  		   BLR	    ]
+ ------------------------------
+
+
+ For Aircraft 2)
+
+ Flight Type   Source Takeoff  Destination Landing Payload	Empty	Cost
+ 2	757	HYD	0.00   	BOM	   75.00     4.00   	19.00  	2.19    
+ 9	757	BOM	120.00 	AHD	   180.00    11.00  	12.00  	1.75    
+ 16	757	AHD	225.00 	DEL	   305.00    13.00  	10.00  	2.33    
+ 21	757	DEL	350.00 	BLR	   510.00    14.00  	9.00   	4.67    
+ 29	757	BLR	555.00 	BLR	   555.00    0.00   	0.00   	0.00    
+ Utilization [%] = 62.500
+
+ Extra Carried demand detail -
+ [ Flight	Extra_Cargo for 	Destination ]
+ [   9		   7.00   		   BLR	    ]
+ [   16		   2.00   		   BLR	    ]
+ ------------------------------
+
+
+ For Aircraft 3)
+
+ Flight Type   Source Takeoff  Destination Landing Payload	Empty	Cost
+ 3	747	DEL	0.00   	AHD	   80.00     23.00  	0.00   	2.33    
+ 11	747	AHD	125.00 	BOM	   185.00    21.00  	2.00   	1.75    
+ 17	747	BOM	230.00 	HYD	   305.00    8.00   	15.00  	2.19    
+ 22	747	HYD	350.00 	MAA	   410.00    2.00   	21.00  	1.75    
+ 26	747	MAA	455.00 	MAA	   455.00    0.00   	0.00   	0.00    
+ Utilization [%] = 45.833
+
+ Extra Carried demand detail -
+ [ Flight	Extra_Cargo for 	Destination ]
+ [   3		   19.00  		   BLR	    ]
+ [   17		   2.00   		   BLR	    ]
+ ------------------------------
+
+
+ For Aircraft 4)
+
+ Flight Type   Source Takeoff  Destination Landing Payload	Empty	Cost
+ 4	707	MAA	0.00   	BLR	   45.00     2.00   	21.00  	1.31    
+ 8	707	BLR	90.00  	MAA	   135.00    4.00   	19.00  	1.31    
+ 15	707	MAA	180.00 	CCU	   315.00    4.00   	19.00  	3.93    
+ 24	707	CCU	360.00 	CCU	   360.00    0.00   	0.00   	0.00    
+ Utilization [%] = 37.500
+
+ Extra Carried demand detail -
+ [ Flight	Extra_Cargo for 	Destination ]
+ [   8		   2.00   		   BLR	    ]
+ ------------------------------
+
+
+ For Aircraft 5)
+
+ Flight Type   Source Takeoff  Destination Landing Payload	Empty	Cost
+ 5	717	MAA	0.00   	HYD	   60.00     12.00  	11.00  	1.75    
+ 10	717	HYD	120.00 	DEL	   245.00    14.00  	9.00   	3.65    
+ 18	717	DEL	305.00 	BOM	   425.00    3.00   	20.00  	3.50    
+ 27	717	BOM	485.00 	BOM	   485.00    0.00   	0.00   	0.00    
+ Utilization [%] = 50.833
+
+ Extra Carried demand detail -
+ [ Flight	Extra_Cargo for 	Destination ]
+ [   5		   10.00  		   BLR	    ]
+ ------------------------------
+
+
+ For Aircraft 6)
+
+ Flight Type   Source Takeoff  Destination Landing Payload	Empty	Cost
+ 6	727	BLR	0.00   	BOM	   95.00     8.00   	15.00  	2.77    
+ 13	727	BOM	155.00 	BLR	   250.00    16.00  	7.00   	2.77    
+ 19	727	BLR	310.00 	HYD	   375.00    8.00   	15.00  	1.90    
+ 25	727	HYD	435.00 	MAA	   495.00    6.00   	17.00  	1.75    
+ Utilization [%] = 52.500
+
+ Extra Carried demand detail -
+ [ Flight	Extra_Cargo for 	Destination ]
+ [   13		   6.00   		   BLR	    ]
+ ------------------------------
+
+
+ For Aircraft 7)
+
+ Flight Type   Source Takeoff  Destination Landing Payload	Empty	Cost
+ 7	767	CCU	0.00   	DEL	   120.00    10.00  	13.00  	3.50    
+ 14	767	DEL	180.00 	CCU	   300.00    10.00  	13.00  	3.50    
+ 23	767	CCU	360.00 	CCU	   360.00    0.00   	0.00   	0.00    
+ Utilization [%] = 40.000
+ ------------------------------
+
+
+ --------------------------------------------------------------------------
+ Remaining Demand
+ --------------------------------------------------------------------------
+
+ 0.00	 0.00	 0.00	 0.00	 0.00	 0.00	 0.00	
+ 0.00	 0.00	 0.00	 8.00	 0.00	 0.00	 2.00	
+ 0.00	 0.00	 0.00	 0.00	 8.00	 0.00	 0.00	
+ 0.00	 0.00	 0.00	 0.00	 0.00	 0.00	 0.00	
+ 2.00	 2.00	 2.00	 0.00	 0.00	 0.00	 0.00	
+ 0.00	 0.00	 0.00	 0.00	 0.00	 0.00	 0.00	
+ 0.00	 0.00	 0.00	 0.00	 0.00	 0.00	 0.00	
+
+ --------------------------------------------------------------------------
+ Remaining Demand = 24.00
+ --------------------------------------------------------------------------
+
+
+ --------------------------------------------------------------------------
+ Frequency of operation between OD pairs
+ --------------------------------------------------------------------------
+
+ 0	 1	 1	 0	 1	 1	 0	
+ 1	 0	 1	 0	 0	 1	 0	
+ 0	 1	 0	 1	 0	 1	 1	
+ 0	 1	 1	 0	 1	 1	 1	
+ 0	 0	 0	 1	 0	 0	 0	
+ 3	 0	 1	 1	 0	 0	 0	
+ 0	 0	 1	 1	 0	 0	 0	
+
+
+
+ --------------------------------------------------------------------------
+ Quality of Service between OD pairs
+ --------------------------------------------------------------------------
+
+ 0.00	 1.00	 1.00	 0.00	 1.00	 1.00	 1.00	
+ 1.00	 0.00	 1.00	 0.00	 0.00	 1.00	 0.00	
+ 0.00	 1.00	 0.00	 1.00	 0.00	 1.00	 1.00	
+ 0.00	 1.00	 1.00	 0.00	 1.00	 1.00	 1.00	
+ 0.00	 0.00	 0.00	 1.00	 0.00	 1.00	 1.00	
+ 1.00	 1.00	 1.00	 1.00	 1.00	 0.00	 1.00	
+ 1.00	 0.00	 1.00	 1.00	 1.00	 1.00	 0.00	
+
+ --------------------------------------------------------------------------ÿ

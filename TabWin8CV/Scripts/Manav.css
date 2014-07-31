@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+body 
+{
+	background-image: url('../Pics/Background_TorontoRestaurant2.jpg');
+	background-color: #cccccc;
+	background-size:100% auto;
+	width:100%;
+	overflow:auto;
+	position:fixed;
+	background-repeat:no-repeat;
+}
+#tablet
+{
+	background:url("../Pics/Tablet.png");
+	background-size:100% 100%;
+	width:auto; 
+	margin-left:38%;
+	margin-right:3%;
+}
+#screen
+{
+	background:url("../Pics/TabWP.jpg");
+	background-size:100% 100%;
+	position:absolute;
+	margin-top:70px;
+	margin-left:5%;
+	height:70%;
+	width:49%;
+}
+#Signature
+{
+	position:absolute;
+	margin-left:62%;
+	margin-top:20px;
+	width:30%;
+	height:50px;
+}
+#Signature:hover
+{
+	background-color:#2A1F55;
+}
+#Contacts
+{
+	width:20%;
+	position:absolute;
+	margin-left:62%;
+	margin-top:70px;
+	width:30%;
+	height:0px;
+}
+.contact
+{
+	height:0px;
+}
+.ChangeLanguage
+{
+	position:absolute;
+	font-size:16px;
+	color:#FFF;
+	font-weight:bold;
+}
+#Lang1
+{
+	margin-top:30px;
+	margin-left:10%;
+}
+#Lang2
+{
+	margin-top:47px;
+	margin-left:10.1%;
+}
+#dropdownMenu1
+{
+	height:20px;
+	width:20px;
+	margin:0 0 0 0;
+}
+.app
+{
+	opacity:0.8;
+}
+.app:hover
+{
+	opacity:1;
+}
+.modal-backdrop
+{
+	background-color:transparent;
+}
+.modal
+{
+	position:absolute;
+	height:100%;
+	width:100%;
+	overflow:auto;
+}
+.modal-dialog
+{
+	margin:0px 0px 0px 0px;
+	height:auto;
+	width:100%;
+}
+.modal-content
+{
+	height:100%;
+	width:100%;
+	padding:0px 0px 0px 0px;
+	background-color:none;
+}
+.modal-header
+{
+	background-color:#2A1FAA;
+	color:#FF0;
+}
+.modal-body
+{
+	background-color:none;
+}
+.nav>li>a{
+	padding-left:12px;
+	padding-right:12px;
+}
+@media (max-width: 1200px) {
+
+    body {
+        background-size: 1200px auto; /* Force the image to its minimum width */
+    }
+	.tablet
+	{
+		width:800px;
+	 	margin-top:5%;
+	 }
+
+}
+.heading
+{
+    font-size: 20px;
+	font-weight:bold;
+	font-family:sans-serif;
+}
+.tagline
+{
+    font-size: 16px;
+    color: #000;
+	margin-top:25px;
+	margin-left:555px;
+    text-align:justify;
+}
+.text
+{
+	font-family:"Times New Roman";
+    font-size:150%;
+	font-weight:normal;
+    text-align:left;
+    color: #000;
+    text-align:justify;
+}
+#Summary
+{
+	font-weight:normal;
+}
+.ITDesc
+{
+	font-size:50%; 
+}
+.table>tbody>tr>td
+{
+	vertical-align:middle;
+}
+.ClassHeader{text-align:left;}
+.btn
+{
+	width:14%;
+	
+}
+a
+{
+	color:#303;
+}
+.panel
+{
+	color:#000;
+	background-color:transparent;
+	margin-bottom:0px;
+	border:none;
+}
+.panel:hover
+{
+	color:#000;
+	background-color:#09C;
+}
+.normaltext
+{
+	display:inline;
+	font-size:16px;
+	font-weight:normal;
+}
+.ClassHeader
+{
+	color:#000;
+}
+.table
+{
+	text-align:center;
+}
+th
+{
+	text-align:center;
+	font-style:italic;
+}
+.table>tbody>tr>td
+{
+	padding:0px;
+}
+h3
+{
+	color:#FFF;
+	height:10px;
+}
+.nav
+{
+	font-size:16px;
+}
+span.stars, span.stars span {
+    display: block;
+    background: url(../Pics/stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
+}
+
+.classysocial {
+	position:fixed;
+	display:inline-block;
+	margin-left:15%;
+	margin-top:35%; 
+	padding-bottom:0%;
+}

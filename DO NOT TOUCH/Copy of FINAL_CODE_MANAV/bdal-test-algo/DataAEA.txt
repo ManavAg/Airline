@@ -1,0 +1,64 @@
+=======================================================
+
+		 $$$$$$ INPUT FILE AEA $$$$$$$
+
+=======================================================
+----------AIRCRAFT TYPE 1 B737--------
+--Airframe--
+-MSSP--BFE--MTOW--W_fuel--W_af
+55	3.3	52.39	14.527	27.125
+--Engine--
+-engine_cost--No_Engines--BPR--OPR--N_c--T_sls--N_shaft
+5.5	2	1.04	16.6	13	7.75	2
+--Finance--
+-Price_fuel---F_resval--F_int--R_ins
+1.07	0.1	0.053	0.5
+--Others--
+-Life--C_coc--C_cab--N_coc--N_cab--R_lab
+14	246.5	81	2	0	63
+----------AIRCRAFT TYPE 2 B757--------
+--Airframe--
+-MSSP--BFE--MTOW--W_fuel--W_af
+73	4.38	113.4	34.26	51.7
+--Engine--
+-engine_cost--No_Engines--BPR--OPR--N_c--T_sls--N_shaft
+7.3	2	6	27.6	11	19.125	1
+--Finance--
+-Price_fuel---F_resval--F_int--R_ins
+1.07	0.1	0.053	0.5
+--Others--
+-Life--C_coc--C_cab--N_coc--N_cab--R_lab
+14	246.5	81	2	0	63
+
+
+
+Airframe
+------
+MSSP		//manufacturers standard study price in million $
+BFE		//Buyer Furnished Equipment in million $
+MTOW		//max takeoff weight in metric tons
+W_fuel		//block fuel weight in metric tons
+W_af		//Airframe weight in metric tons i.e Manufcaturers Empty Wight +2% less weight of bare engines
+Engine
+------
+engine_cost	 //total cost of engines in million $
+No_Engines	//number of engines
+BPR		//bypass pressure ratio
+OPR		//overall enginepressure ratio
+N_c		//Number of compr. stages incl fan stages
+T_sls		//Sea level static TO thrust in metric tons
+N_shaft		//no. of shafts
+Finance
+------
+Price_fuel	//price of fuel in $/kg
+F_resval	//Aircraft Residual value as a fraction of original ADP=0,1
+F_int		//factor on account of rate of interest = 0,053
+R_ins		//interest rate =0,5%
+Others
+------
+Life		//useful operational life of the aircraft	
+C_coc		//cost of cockpit crew member $/h
+C_cab		//cost of cabin crew member $/h
+N_coc		//no. of cockpit crew members
+N_cab		//no. of cabin crew members
+R_lab		//labor rate incl. burden = $63/h (1989 price)

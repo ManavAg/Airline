@@ -1,0 +1,107 @@
+ -------Airline Network Optimization for cargo Airlines--------BETA version
+ >>>>****for testing and evalution only **** not for commercial use****<<<<
+
+ ===========================================================================
+ This program is designed and developed at 
+ Aerospace Engineering Department, IIT Bombay 
+
+ For any query/suggestion, contact - 
+ Prof. Rajkumar S. Pant , LTA systems lab, rkpant@aero.iitb.ac.in
+ Ajeet Singh, MTech Student(2005-2007), ajeet@aero.iitb.ac.in
+ Florian Maul, Technical University of Munich, florian.maul@mytum.de
+ Manav Agarwal, Undergraduate 2007-2012, IIT Bombay, manav.agarwal@iitb.ac.in
+ ===========================================================================
+
+ The Schedule is generated on :
+ Tue Jun 23 13:23:38 2009
+ 
+ ===========================================================================
+
+
+ ------------------------------------------
+ System Detail
+ ------------------------------------------
+ Aircraft	Demand	Cost	Time
+   1		16.00	5.20	128.00
+   2		16.00	5.20	128.00
+ ------------------------------------------
+ Sum		32.00	10.40	256.00
+
+ Priority of Demand Index  	= 0.2363
+ Priority of Cost Index  	= 0.5673
+ Priority of Time index  	= 0.1491
+ Priority of Route Prio. index 	= 0.0473
+
+ Tons/Lakhs Rs 	= 3.0769
+ Tons/Hour 	= 7.5000
+ Variance QOS 	= 0.2222
+
+ Fleet Utilization [%] 	= 22.222
+ No. of OD pair served 	= 2
+
+
+ --------------------------------------------------------------------------
+ Network Schedule
+ --------------------------------------------------------------------------
+ Flight Ac     Type  Source Takeoff Destination Landing Payload	Empty	Cost
+ 1 	1 	737  MAA     0.00	BLR	60.00	15.00	0.00	2.60 
+ 2 	2 	737  BLR     0.00	MAA	60.00	15.00	0.00	2.60 
+ 3 	1 	737  BLR     68.00	MAA	128.00	1.00	14.00	2.60 
+ 4 	2 	737  MAA     68.00	BLR	128.00	1.00	14.00	2.60 
+
+
+ --------------------------------------------------------------------------
+ Aircraft Schedule
+ --------------------------------------------------------------------------
+
+
+ For Aircraft 1)
+
+ Flight Type   Source Takeoff  Destination Landing Payload	Empty	Cost
+ 1	737	MAA	0.00   	BLR	   60.00     15.00  	0.00   	2.60    
+ 3	737	BLR	68.00  	MAA	   128.00    1.00   	14.00  	2.60    
+ Utilization [%] = 22.222
+ ------------------------------
+
+
+ For Aircraft 2)
+
+ Flight Type   Source Takeoff  Destination Landing Payload	Empty	Cost
+ 2	737	BLR	0.00   	MAA	   60.00     15.00  	0.00   	2.60    
+ 4	737	MAA	68.00  	BLR	   128.00    1.00   	14.00  	2.60    
+ Utilization [%] = 22.222
+ ------------------------------
+
+
+ --------------------------------------------------------------------------
+ Remaining Demand
+ --------------------------------------------------------------------------
+
+ 0.00	 0.00	 3.00	
+ 0.00	 0.00	 8.00	
+ 3.00	 8.00	 0.00	
+
+ --------------------------------------------------------------------------
+ Remaining Demand = 22.00
+ --------------------------------------------------------------------------
+
+
+ --------------------------------------------------------------------------
+ Frequency of operation between OD pairs
+ --------------------------------------------------------------------------
+
+ 0	 2	 0	
+ 2	 0	 0	
+ 0	 0	 0	
+
+
+
+ --------------------------------------------------------------------------
+ Quality of Service between OD pairs
+ --------------------------------------------------------------------------
+
+ 0.00	 1.00	 0.00	
+ 1.00	 0.00	 0.00	
+ 0.00	 0.00	 0.00	
+
+ --------------------------------------------------------------------------ÿ

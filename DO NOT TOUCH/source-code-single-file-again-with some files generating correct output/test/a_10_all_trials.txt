@@ -1,0 +1,2 @@
+ trial_no )----------variables-----------sum of variables--------objective value------------------
+ 1 )  0.000054 + 0.216307 + 0.381378 + 0.402261 +  = 1.000000, objective value => 0.566105 

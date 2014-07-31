@@ -1,0 +1,4 @@
+                       Indices                                      Network Parameters                                                     Started at : Tue Jun 23 18:23:06 2009
+
+ Seed                  Demand/Cost/Time/Priority                    Demand/Cost/Time/VarQoS/Utilization                                    Objective Function Values
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

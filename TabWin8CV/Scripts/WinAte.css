@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+.tablet
+{
+	background:url("../Pics/Tablet.png");
+	background-size:100% 100%;
+	width:auto; 
+}
+.screen
+{
+	background-size:100% 100%;
+	position:absolute;
+	background-repeat:no-repeat;
+}
+.Signature
+{
+	position:absolute;
+	margin-left:50%;
+	width:50%;
+	color:#FFF;
+	text-align:right;
+	cursor:pointer;
+}
+.SignImg
+{
+	position:absolute;
+	margin-left:62%;
+	width:20%;
+	display:block;
+}
+.SignatureText
+{
+	position:absolute;
+	margin-left:0%;
+	margin-top:2%;
+	width:60%;
+	display:block;
+}
+.Signature:hover
+{
+	background-color:#2A1F55;
+}
+.SFirstName.SLastName.SEmail
+{
+	position:absolute;
+}
+.Contacts
+{
+	width:20%;
+	position:absolute;
+	margin-left:62%;
+	width:30%;
+	height:0px;
+}
+.contact
+{
+	height:0px;
+}
+.app
+{
+	opacity:0.8;
+	cursor:pointer;
+}
+.app:hover
+{
+	opacity:1;
+}
+.modal-backdrop
+{
+	background-color:transparent;
+}
+.w8modal
+{
+	position:absolute;
+	height:100%;
+	width:100%;
+	overflow:auto;
+}
+.w8modal-dialog
+{
+	margin:0px 0px 0px 0px;
+	height:auto;
+	width:100%;
+}
+.w8modal-content
+{
+	height:100%;
+	width:100%;
+	padding:0px 0px 0px 0px;
+	background-color:none;
+}
+.w8modal-header
+{
+	background-color:#2A1FAA;
+	color:#FF0;
+}
+.w8modal-body
+{
+	background-color:none;
+}
+.Wapps
+{
+	display:none;
+}

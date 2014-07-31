@@ -1,0 +1,82 @@
+=======================================================
+
+		 $$$$$$  INPUT FILE  $$$$$$$
+
+=======================================================
+----------TOTAL AIRPORTS----------------------
+3
+----------AIRPORT DETAILS---------------------
+-No----Name----Max Delay---takeoff_slots--takeoff_timings(mins)--Landing_slots---Landing_timings(mins)-----
+1	MAA	 0		1		0-600			1		0-600
+2	BLR	 0		1		0-600 			1		0-600
+3	BOM	 0		1	        0-600			1		0-600
+----------DEMAND (tons/day)---(line= outgoing demand,column= incoming demand)----------------------------------------------------------------
+0	2	8
+2	0	8
+8	10	0
+---------BLOCK TIME (min.) -------------------
+0	45	105
+45	0	95
+105	95	0
+---------Distance (km) -------------------
+0	269	1043
+269	0	843
+1043	843	0
+----------Total Aircraft Types------------------
+2
+----------Fleet size (total aircraft)----------
+5	1
+----------Fleet Detail-------------------------
+AC_No--Type--Airport--T/O_time--Availability (mins, from start of the day)--MAX_BH
+1	1	MAA	0	600	600	45.0
+2	1	BLR	0	600	600	45.0
+3	1	MAA	0	600	600	45.0
+4	1	BOM	0	600	600	45.0
+5	1	BLR	0	600	600	45.0
+6	2	BOM	0	600	600	45.0
+---------Calculate Cost with AEA? (y/n)---------
+n
+----------Aircraft Type Details-----------------
+Type_No--Code-Rmaxpayload-RmaxFuel-RMaxFerry-Payloadmax-Payloadmaxfuel (km&tons)
+1	737	1990.9	3055.8	4074.4	15.0	15.0
+2	757	3704	5556	6482	23.0	23.0
+----------Static operating cost (Rs.Lacs)---------
+--ACTypeNo 1--
+0	0.60	1.40	
+0.60	0	1.26
+1.40	1.26	0
+--ACTypeNo 2--
+0	1.31	3.065
+1.31	0	2.77
+3.06	2.77	0
+----------Total Bases(maintenance center)-------
+3
+----------Base Station Detail-------------------
+No-----Name-----Hanger capacity-----------------
+1	MAA	2	0
+2	BLR	2	0
+3	BOM	1	1
+-Max Operating time slot (mins) (from start of the day)-
+600
+----------Priority of Routes (-1 or 0 to +1)-----------------
+(-1=don't fly, 0 no priority,+0.99=high priority,+1=prefer)
+0	0.50	0.99
+0.50	0	0.99
+0.99	0.99	0
+----------Priority of Routes (-1 or 0 to +1)-----------------
+1.0	0.05	0.05
+0.05	1.0	0.05
+0.05	0.05	1.0
+----------Whitening criteria (decision criteria)-------
+----------for Demand index----------------------
+--(more then x percentile -select) (less then y percentile -reject)---
+	80					20
+----------for Cost index------------------------
+--(more then x percentile -reject) (less then y percentile -select)---
+	80					20
+----------for Time (taken) index------------------------
+--(more then x percentile -reject) (less then y percentile -select)---
+	80					20	
+----------for route priority index------------------------
+--(more then x percentile -select) (less then y percentile -reject)---
+	80					20
